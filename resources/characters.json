@@ -1,0 +1,20 @@
+{
+    "someId": {
+        "name": "Fronch",
+        "backstory": "something",
+        "characteristics": {
+            "weaponSkill": {
+                "value": 36,
+                "advancement": "basic"
+            }
+        },
+        "origin": {
+            "homeWorld": "",
+            "birthright": "",
+            "lureOfTheVoid": "",
+            "trialsAndTravails": "",
+            "motiviation": "",
+            "career": ""
+        }
+    }
+}

@@ -3,8 +3,40 @@
         "name": "Fronch",
         "backstory": "something",
         "characteristics": {
-            "weaponSkill": {
+            "WEAPON_SKILL": {
                 "value": 36,
+                "advancement": "basic"
+            },
+            "BALLISTIC_SKILL": {
+                "value": 33,
+                "advancement": "basic"
+            },
+            "STRENGTH": {
+                "value": 41,
+                "advancement": "basic"
+            },
+            "TOUGHNESS": {
+                "value": 35,
+                "advancement": "basic"
+            },
+            "AGILITY": {
+                "value": 34,
+                "advancement": "basic"
+            },
+            "INTELLIGENCE": {
+                "value": 37,
+                "advancement": "basic"
+            },
+            "PERCEPTION": {
+                "value": 40,
+                "advancement": "basic"
+            },
+            "WILL_POWER": {
+                "value": 39,
+                "advancement": "basic"
+            },
+            "FELLOWSHIP": {
+                "value": 33,
                 "advancement": "basic"
             }
         },

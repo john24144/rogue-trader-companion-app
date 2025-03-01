@@ -1,13 +1,9 @@
 import { LoaderFunction } from "react-router-dom";
 import characters from "../../resources/characters.json";
-import { CharacterModel } from "../character/CharacterModel.ts";
+import { CharacterListModel } from "./CharacterList.tsx";
 
-/**
- *
- * @constructor
- */
 const CharacterListLoader: LoaderFunction = function () {
-    return characters as { [key: string]: CharacterModel };
+    return characters as CharacterListModel;
 };
 
 export default CharacterListLoader;

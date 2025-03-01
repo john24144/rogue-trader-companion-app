@@ -1,11 +1,18 @@
-import { render, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import Character from "./Character.tsx";
-import CharacterName from "../characterName/CharacterName.tsx";
-import CharacteristicList from "../characteristicList/CharacteristicList.tsx";
+import Characteristic from "../characteristic/Characteristic.tsx";
 
-jest.mock("../characterName/CharacterName.tsx");
-jest.mock("../characteristicList/CharacteristicList.tsx");
+jest.mock("../characteristic/Characteristic.tsx");
+jest.mock("../../resources/characteristics.json", () => ({
+    __esModule: true,
+    default: {
+        WEAPON_SKILL: {
+            name: "Weapon Skill",
+            abbreviation: "WS",
+        },
+    },
+}));
 
 function renderCharacter(character: unknown) {
     render(
@@ -22,30 +29,31 @@ function renderCharacter(character: unknown) {
 }
 
 describe("Character component", () => {
-    it("should render nothing if loader data is null", async () => {
+    it("should render CHARACTERISTICS if loader data is null", async () => {
         renderCharacter(null);
-        await waitFor(() => {
-            expect(CharacterName).not.toHaveBeenCalled();
-            expect(CharacteristicList).not.toHaveBeenCalled();
-        });
+        expect(await screen.findByText("CHARACTERISTICS")).toBeVisible();
     });
 
-    it("should render nothing if loader data is not an object", async () => {
-        renderCharacter("");
-        await waitFor(() => {
-            expect(CharacterName).not.toHaveBeenCalled();
-            expect(CharacteristicList).not.toHaveBeenCalled();
-        });
-    });
-
-    it("should render character name and characteristics list for valid character", async () => {
+    it("should render CHARACTERISTICS if loader data is an empty object", async () => {
         renderCharacter({});
-        await waitFor(() => {
-            expect(CharacterName).toHaveBeenCalledWith({ character: {} }, {});
-            expect(CharacteristicList).toHaveBeenCalledWith(
-                { character: {} },
+        expect(await screen.findByText("CHARACTERISTICS")).toBeVisible();
+    });
+
+    it("should render character name if present", async () => {
+        renderCharacter({ name: "Fronch" });
+        expect(await screen.findByText("Fronch")).toBeVisible();
+    });
+
+    it("should render characteristics", async () => {
+        renderCharacter({ characteristics: { WEAPON_SKILL: "some value" } });
+        await waitFor(() =>
+            expect(Characteristic).toBeCalledWith(
+                {
+                    name: "Weapon Skill",
+                    characteristic: "some value",
+                },
                 {},
-            );
-        });
+            ),
+        );
     });
 });

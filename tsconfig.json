@@ -22,6 +22,12 @@
         "noFallthroughCasesInSwitch": true,
         "allowSyntheticDefaultImports": true
     },
-    "include": ["src", "vite.config.ts"],
+    "include": [
+        "src",
+        "vite.config.ts",
+        "jest.config.ts",
+        "jest.setup.ts",
+        "typings.d.ts"
+    ],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -6,6 +6,9 @@ const jestConfig: JestConfigWithTsJest = {
         "^.+.tsx?$": ["ts-jest", {}],
     },
     setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
+    moduleNameMapper: {
+        "\\.css$": "identity-obj-proxy",
+    },
 };
 
 export default jestConfig;

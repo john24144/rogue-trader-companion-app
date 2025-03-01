@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Link, Outlet } from "react-router-dom";
 
-export default function app(): ReactNode {
+export default function Outline(): ReactNode {
     return (
         <>
             <h1>MAIN MENU</h1>

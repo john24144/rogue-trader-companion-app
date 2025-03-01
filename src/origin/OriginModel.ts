@@ -1,4 +1,4 @@
-export type OriginModel = unknown | {
+export type OriginModel = {
     homeWorld: string;
     birthright: string;
     lureOfTheVoid: string;

@@ -41,12 +41,12 @@
             }
         },
         "origin": {
-            "homeWorld": "",
-            "birthright": "",
-            "lureOfTheVoid": "",
-            "trialsAndTravails": "",
-            "motiviation": "",
-            "career": ""
+            "HOME_WORLD": "Death World",
+            "BIRTHRIGHT": "Scavenger",
+            "LURE_OF_THE_VOID": "Tainted",
+            "TRIAL_AND_TRAVAILS": "The Hand Of War",
+            "MOTIVATION": "Endurance",
+            "CAREER": "Explorator"
         }
     }
 }

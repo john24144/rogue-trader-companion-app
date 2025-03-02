@@ -1,4 +1,5 @@
 import { outerBox, innerBox } from "./Characteristic.module.css";
+import { box } from "../global.module.css";
 import { FC } from "react";
 
 const Characteristic: FC<{
@@ -8,9 +9,9 @@ const Characteristic: FC<{
     const bonus = Math.floor((characteristic?.value ?? 1) / 10);
 
     return (
-        <div className={outerBox}>
+        <div className={`${box} ${outerBox}`}>
             <h3>{name}</h3>
-            <div className={innerBox}>
+            <div className={`${box} ${innerBox}`}>
                 <span>
                     {characteristic?.value} (+{bonus})
                 </span>

@@ -11,7 +11,7 @@ describe("Characteristic component", () => {
         render(
             <Characteristic
                 name={"some name"}
-                characteristic={{ value: 32 }}
+                characteristic={{ VALUE: 32 }}
             />,
         );
         expect(await screen.findByText("32 (+3)")).toBeVisible();

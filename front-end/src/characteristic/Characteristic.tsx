@@ -6,14 +6,14 @@ const Characteristic: FC<{
     name: string;
     characteristic?: CharacteristicModel;
 }> = function ({ name, characteristic }) {
-    const bonus = Math.floor((characteristic?.value ?? 1) / 10);
+    const bonus = Math.floor((characteristic?.VALUE ?? 1) / 10);
 
     return (
         <div className={`${box} ${outerBox}`}>
             <h3>{name}</h3>
             <div className={`${box} ${innerBox}`}>
                 <span>
-                    {characteristic?.value} (+{bonus})
+                    {characteristic?.VALUE ?? 0} (+{bonus})
                 </span>
             </div>
         </div>
@@ -21,8 +21,8 @@ const Characteristic: FC<{
 };
 
 export type CharacteristicModel = {
-    value?: number;
-    advancement?: "basic" | "trained";
+    VALUE?: number;
+    ADVANCEMENT?: "basic" | "trained";
 };
 
 export default Characteristic;

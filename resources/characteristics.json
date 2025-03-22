@@ -1,38 +1,38 @@
 {
     "WEAPON_SKILL": {
-        "name": "Weapon Skill",
-        "abbreviation": "WS"
+        "NAME": "Weapon Skill",
+        "ABBREVIATION": "WS"
     },
     "BALLISTIC_SKILL": {
-        "name": "Ballistic Skill",
-        "abbreviation": "WS"
+        "NAME": "Ballistic Skill",
+        "ABBREVIATION": "WS"
     },
     "STRENGTH": {
-        "name": "Strength",
-        "abbreviation": "S"
+        "NAME": "Strength",
+        "ABBREVIATION": "S"
     },
     "TOUGHNESS": {
-        "name": "Toughness",
-        "abbreviation": "T"
+        "NAME": "Toughness",
+        "ABBREVIATION": "T"
     },
     "AGILITY": {
-        "name": "Agility",
-        "abbreviation": "Ag"
+        "NAME": "Agility",
+        "ABBREVIATION": "Ag"
     },
     "INTELLIGENCE": {
-        "name": "Intelligence",
-        "abbreviation": "Int"
+        "NAME": "Intelligence",
+        "ABBREVIATION": "Int"
     },
     "PERCEPTION": {
-        "name": "Perception",
-        "abbreviation": "Per"
+        "NAME": "Perception",
+        "ABBREVIATION": "Per"
     },
     "WILL_POWER": {
-        "name": "Will Power",
-        "abbreviation": "WP"
+        "NAME": "Will Power",
+        "ABBREVIATION": "WP"
     },
     "FELLOWSHIP": {
-        "name": "Fellowship",
-        "abbreviation": "Fel"
+        "NAME": "Fellowship",
+        "ABBREVIATION": "Fel"
     }
 }

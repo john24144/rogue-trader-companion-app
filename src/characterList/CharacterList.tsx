@@ -11,7 +11,7 @@ const CharacterList: FC = function () {
             <h1>CHARACTERS</h1>
             {characters.map((entry, index) => (
                 <Link key={index} to={"/characters/" + entry[0]}>
-                    {entry[1].name}
+                    {entry[1].NAME}
                 </Link>
             ))}
         </>

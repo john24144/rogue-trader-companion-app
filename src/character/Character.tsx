@@ -12,28 +12,28 @@ const Character: FC = function () {
 
     return (
         <>
-            <h1>{character?.name}</h1>
+            <h1>{character?.NAME}</h1>
             <h2>CHARACTERISTICS</h2>
             <div className={characteristicsContainer}>
                 {Object.entries(characteristics).map(
                     ([id, characteristic], index) => (
                         <Characteristic
                             key={index}
-                            name={characteristic.name}
-                            characteristic={character?.characteristics?.[id]}
+                            name={characteristic.NAME}
+                            characteristic={character?.CHARACTERISTICS?.[id]}
                         />
                     ),
                 )}
             </div>
-            <Origin origin={character?.origin} />
+            <Origin origin={character?.ORIGIN} />
         </>
     );
 };
 
 export type CharacterModel = {
-    name: string;
-    characteristics: { [key: string]: CharacteristicModel };
-    origin: OriginModel;
+    NAME: string;
+    CHARACTERISTICS: { [key: string]: CharacteristicModel };
+    ORIGIN: OriginModel;
 };
 
 export default Character;

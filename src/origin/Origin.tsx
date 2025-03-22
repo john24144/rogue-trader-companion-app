@@ -10,7 +10,7 @@ const Origin: FC<{ origin?: OriginModel }> = ({ origin }) => {
             <div className={section}>
                 {Object.entries(originProperties).map(([id, prop], index) => (
                     <div key={index} className={`${box}`}>
-                        <h3>{prop.name}: </h3>
+                        <h3>{prop.NAME}: </h3>
                         <p>{origin?.[id]}</p>
                     </div>
                 ))}

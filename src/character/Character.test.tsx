@@ -2,14 +2,16 @@ import { render, screen, waitFor } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import Character from "./Character.tsx";
 import Characteristic from "../characteristic/Characteristic.tsx";
+import Origin from "../origin/Origin.tsx";
 
 jest.mock("../characteristic/Characteristic.tsx");
+jest.mock("../origin/Origin.tsx");
 jest.mock("../../resources/characteristics.json", () => ({
     __esModule: true,
     default: {
         WEAPON_SKILL: {
-            name: "Weapon Skill",
-            abbreviation: "WS",
+            NAME: "Weapon Skill",
+            ABBREVIATION: "WS",
         },
     },
 }));
@@ -40,18 +42,28 @@ describe("Character component", () => {
     });
 
     it("should render character name if present", async () => {
-        renderCharacter({ name: "Fronch" });
+        renderCharacter({ NAME: "Fronch" });
         expect(await screen.findByText("Fronch")).toBeVisible();
     });
 
     it("should render characteristics", async () => {
-        renderCharacter({ characteristics: { WEAPON_SKILL: "some value" } });
+        renderCharacter({ CHARACTERISTICS: { WEAPON_SKILL: "some value" } });
         await waitFor(() =>
             expect(Characteristic).toBeCalledWith(
                 {
                     name: "Weapon Skill",
                     characteristic: "some value",
                 },
+                {},
+            ),
+        );
+    });
+
+    it("should render origin", async () => {
+        renderCharacter({ ORIGIN: { HOME_WORLD: "some value" } });
+        await waitFor(() =>
+            expect(Origin).toBeCalledWith(
+                { origin: { HOME_WORLD: "some value" } },
                 {},
             ),
         );

@@ -29,7 +29,7 @@ describe("Character List component", () => {
                         path: "/",
                         element: <CharacterList />,
                         loader: () => {
-                            return { "some-id": { name: "some name" } };
+                            return { "some-id": { NAME: "some name" } };
                         },
                     },
                     {

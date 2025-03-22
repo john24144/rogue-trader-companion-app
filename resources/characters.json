@@ -1,47 +1,46 @@
 {
     "someId": {
-        "name": "Fronch",
-        "backstory": "something",
-        "characteristics": {
+        "NAME": "Fronch",
+        "CHARACTERISTICS": {
             "WEAPON_SKILL": {
-                "value": 36,
-                "advancement": "basic"
+                "VALUE": 36,
+                "ADVANCEMENT": "basic"
             },
             "BALLISTIC_SKILL": {
-                "value": 33,
-                "advancement": "basic"
+                "VALUE": 33,
+                "ADVANCEMENT": "basic"
             },
             "STRENGTH": {
-                "value": 41,
-                "advancement": "basic"
+                "VALUE": 41,
+                "ADVANCEMENT": "basic"
             },
             "TOUGHNESS": {
-                "value": 35,
-                "advancement": "basic"
+                "VALUE": 35,
+                "ADVANCEMENT": "basic"
             },
             "AGILITY": {
-                "value": 34,
-                "advancement": "basic"
+                "VALUE": 34,
+                "ADVANCEMENT": "basic"
             },
             "INTELLIGENCE": {
-                "value": 37,
-                "advancement": "basic"
+                "VALUE": 37,
+                "ADVANCEMENT": "basic"
             },
             "PERCEPTION": {
-                "value": 40,
-                "advancement": "basic"
+                "VALUE": 40,
+                "ADVANCEMENT": "basic"
             },
             "WILL_POWER": {
-                "value": 39,
-                "advancement": "basic"
+                "VALUE": 39,
+                "ADVANCEMENT": "basic"
             },
             "FELLOWSHIP": {
-                "value": 33,
-                "advancement": "basic"
+                "VALUE": 33,
+                "ADVANCEMENT": "basic"
             }
         },
-        "origin": {
-            "HOME_WORLD": "Death World",
+        "ORIGIN": {
+            "HOME_WORLD": "DEATH_WORLD",
             "BIRTHRIGHT": "Scavenger",
             "LURE_OF_THE_VOID": "Tainted",
             "TRIAL_AND_TRAVAILS": "The Hand Of War",

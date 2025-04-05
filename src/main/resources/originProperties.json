@@ -1,0 +1,20 @@
+{
+    "HOME_WORLD": {
+        "NAME": "Home World"
+    },
+    "BIRTHRIGHT": {
+        "NAME": "Birthright"
+    },
+    "LURE_OF_THE_VOID": {
+        "NAME": "Lure of the Void"
+    },
+    "TRIAL_AND_TRAVAILS": {
+        "NAME": "Trials and Travails"
+    },
+    "MOTIVATION": {
+        "NAME": "Motivation"
+    },
+    "CAREER": {
+        "NAME": "Career"
+    }
+}

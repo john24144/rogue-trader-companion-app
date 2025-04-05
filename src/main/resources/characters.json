@@ -1,0 +1,51 @@
+{
+    "someId": {
+        "NAME": "Fronch",
+        "CHARACTERISTICS": {
+            "WEAPON_SKILL": {
+                "VALUE": 36,
+                "ADVANCEMENT": "basic"
+            },
+            "BALLISTIC_SKILL": {
+                "VALUE": 33,
+                "ADVANCEMENT": "basic"
+            },
+            "STRENGTH": {
+                "VALUE": 41,
+                "ADVANCEMENT": "basic"
+            },
+            "TOUGHNESS": {
+                "VALUE": 35,
+                "ADVANCEMENT": "basic"
+            },
+            "AGILITY": {
+                "VALUE": 34,
+                "ADVANCEMENT": "basic"
+            },
+            "INTELLIGENCE": {
+                "VALUE": 37,
+                "ADVANCEMENT": "basic"
+            },
+            "PERCEPTION": {
+                "VALUE": 40,
+                "ADVANCEMENT": "basic"
+            },
+            "WILL_POWER": {
+                "VALUE": 39,
+                "ADVANCEMENT": "basic"
+            },
+            "FELLOWSHIP": {
+                "VALUE": 33,
+                "ADVANCEMENT": "basic"
+            }
+        },
+        "ORIGIN": {
+            "HOME_WORLD": "DEATH_WORLD",
+            "BIRTHRIGHT": "Scavenger",
+            "LURE_OF_THE_VOID": "Tainted",
+            "TRIAL_AND_TRAVAILS": "The Hand Of War",
+            "MOTIVATION": "Endurance",
+            "CAREER": "Explorator"
+        }
+    }
+}
